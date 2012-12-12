@@ -6,7 +6,7 @@ package
 	{
 		public function Alpha()
 		{
-			super(320,240,PlayState,2);
+			super(320, 240, IntroState, 2);
 		}
 	}
 }
