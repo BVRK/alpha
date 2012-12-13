@@ -15,9 +15,11 @@ package
 			add(logo);
 
 			var timer:FlxTimer = new FlxTimer();
-			timer.start(3, 1, function(timer:FlxTimer):void {
+			timer.start(5, 1, function(timer:FlxTimer):void {
 				FlxG.switchState(new PlayState());
 			});
+
+			FlxG.flash(0xff000000);
 		}
 	}
 }
