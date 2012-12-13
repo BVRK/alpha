@@ -16,5 +16,19 @@ package
 
 			add(helloWorld);
 		}
+
+		override public function update():void
+		{
+			if (FlxG.keys.justReleased("LEFT"))
+			{
+				FlxG.log("left!");
+			}
+			else if (FlxG.keys.justReleased("RIGHT"))
+			{
+				FlxG.log("right!");
+			}
+
+			super.update();
+		}
 	}
 }

@@ -9,6 +9,7 @@ package
 		{
 			super(640, 480, IntroState, 1);
 			FlxG.mouse.show();
+			FlxG.debug = true;
 		}
 	}
 }
