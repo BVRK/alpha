@@ -7,6 +7,10 @@ package
 		[Embed(source="data/BenchNine-Regular.ttf", fontFamily="BenchNine", embedAsCFF=false)]
 		public var fontBenchNine:String;
 
+		// TODO(ohwillie): move these into their own namespace
+		[Embed(source="data/left_blip.mp3")] private var LeftBlip:Class;
+		[Embed(source="data/right_blip.mp3")] private var RightBlip:Class;
+
 		private var x:Array = Puzzles.Saw1;
 
 		override public function create():void
@@ -21,10 +25,12 @@ package
 		{
 			if (FlxG.keys.justReleased("LEFT"))
 			{
+				FlxG.play(LeftBlip)
 				FlxG.log("left!");
 			}
 			else if (FlxG.keys.justReleased("RIGHT"))
 			{
+				FlxG.play(RightBlip)
 				FlxG.log("right!");
 			}
 
