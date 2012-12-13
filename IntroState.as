@@ -13,6 +13,11 @@ package
 			logo.y = (480 - logo.height) / 2;
 
 			add(logo);
+
+			var timer:FlxTimer = new FlxTimer();
+			timer.start(3, 1, function(timer:FlxTimer):void {
+				FlxG.switchState(new PlayState());
+			});
 		}
 	}
 }
