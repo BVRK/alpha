@@ -4,7 +4,7 @@ package
 
 	public class PlayState extends FlxState
 	{
-		[Embed(source="data/BenchNine-Regular.ttf", fontFamily="BenchNine")]
+		[Embed(source="data/BenchNine-Regular.ttf", fontFamily="BenchNine", embedAsCFF=false)]
 		public var fontBenchNine:String;
 
 		override public function create():void
