@@ -4,7 +4,7 @@ package
 
 	public class IntroState extends FlxState
 	{
-		[Embed(source = "data/bvrk.png")] public static var ImgBvrkLogo:Class;
+		[Embed(source="data/bvrk.png")] public static var ImgBvrkLogo:Class;
 
 		public override function create():void
 		{

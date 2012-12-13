@@ -4,9 +4,15 @@ package
 
 	public class PlayState extends FlxState
 	{
+		[Embed(source="data/BenchNine-Regular.ttf", fontFamily="BenchNine")]
+		public var fontBenchNine:String;
+
 		override public function create():void
 		{
-			add(new FlxText(0,0,100,"Hello World!"));
+			var helloWorld:FlxText = new FlxText(0,0,100,"Hello World!");
+			helloWorld.setFormat("BenchNine", 24);
+
+			add(helloWorld);
 		}
 	}
 }
